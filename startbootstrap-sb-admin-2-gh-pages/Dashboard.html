@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>dashboard</title>
+</head>
+<body>
+<table class="table" id="dataTable">
+    <thead>
+    <th>Year</th>
+    <th>Items Sold</th>
+    <th>Turnover ($)</th>
+    <th>Profit ($)</th>
+    </thead>
+    <tbody>
+    <tr>
+        <td>2016</td>
+        <td>10</td>
+        <td>200</td>
+        <td>89</td>
+    </tr>
+    <tr>
+        <td>2017</td>
+        <td id=>25</td>
+        <td>550</td>
+        <td>225</td>
+    </tr>
+    <tr>
+        <td>2018</td>
+        <td id="turnover">50</td>
+        <td>1200</td>
+        <td>600</td>
+    </tr>
+    <tr>
+        <td>2019</td>
+        <td>120</td>
+        <td>2450</td>
+        <td>1100</td>
+    </tr>
+    </tbody>
+</table>
+
+<div class="chart">
+    <canvas id="myChart"></canvas>
+</div>
+
+<button id="Btn" onclick="NameF()">Press</button>
+
+<!--<div class="row">-->
+
+<!--    <div class="col-xl-8 col-lg-7">-->
+
+<!--        &lt;!&ndash; Area Chart &ndash;&gt;-->
+<!--        <div class="card shadow mb-4">-->
+<!--            <div class="card-header py-3">-->
+<!--                <h6 class="m-0 font-weight-bold text-primary">Area Chart</h6>-->
+<!--            </div>-->
+<!--            <div class="card-body">-->
+<!--                <div class="chart-area">-->
+<!--                    <canvas id="myAreaChart"></canvas>-->
+<!--                </div>-->
+<!--                <hr>-->
+<!--                Styling for the area chart can be found in the-->
+<!--                <code>/js/demo/chart-area-demo.js</code> file.-->
+<!--            </div>-->
+<!--        </div>-->
+
+<!--    </div>-->
+
+<!--</div>-->
+
+
+<script src="vendor/jquery/jquery.min.js"></script>
+<script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+<!-- Core plugin JavaScript-->
+<script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+
+<!-- Custom scripts for all pages-->
+<script src="js/sb-admin-2.min.js"></script>
+
+<!-- Page level plugins -->
+<script src="vendor/chart.js/Chart.min.js"></script>
+
+<!-- Page level custom scripts -->
+<script src="dashboard.js"></script>
+
+
+</body>
+</html>

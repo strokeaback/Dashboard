@@ -1,0 +1,33 @@
+table tbody tr:nth-last-child(-n+3) {
+  display: none;
+}
+
+#showRetired {
+  display: none;
+}
+
+#showRetired ~ #hideBtn {
+  display: none;
+}
+
+#showRetired:checked {
+  & + table tbody tr:nth-last-child(-n+3) {
+    display: table-row;
+  }
+  /* change the buttons around */
+  & ~ #showBtn {
+    display: none;
+  }
+  & ~ #hideBtn {
+    display: inline;
+  }
+}
+
+label[for='showRetired'] {
+  background: lightgreen;
+  border-radius: 4px;
+  cursor: pointer;
+  padding: 10px;
+  position: relative;
+  top: 20px;
+}

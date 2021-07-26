@@ -1,0 +1,487 @@
+[
+  {
+    "UserName": "Кисамеденова Лаура Акимгалиевна" ,
+    "createdBy": "242" ,
+    "count": "44" ,
+    "active": "0" ,
+    "completed": "37" ,
+    "paused": "5" ,
+    "removed": "2"
+  },
+  {
+    "UserName": "Омбаева Маржан Токтасыновна",
+    "createdBy": "252",
+    "count": "26",
+    "active": "0",
+    "completed": "16",
+    "paused": "8",
+    "removed": "2"
+  },
+  {
+    "UserName": "Битабаров Берик Абдимажитович" ,
+    "createdBy": "37841" ,
+    "count": "3" ,
+    "active": "0" ,
+    "completed": "1" ,
+    "paused": "2" ,
+    "removed": "0"
+  },
+  {
+    "UserName":"Жумагулова Нагима Жумагуловна",
+    "createdBy":"44610",
+    "count":"43",
+    "active":"0",
+    "completed":"23",
+    "paused":"15",
+    "removed":"5"
+  },
+  {
+    "UserName":"Кудайбергенова Сауле Ескендировна",
+    "createdBy":"45084",
+    "count":"50",
+    "active":"0",
+    "completed":"42",
+    "paused":"0",
+    "removed":"8"
+  },
+  {
+    "UserName":"Зекенова Гульнар Кенесбаевна",
+    "createdBy":"45086",
+    "count":"154",
+    "active":"0",
+    "completed":"131",
+    "paused":"5",
+    "removed":"18"
+  },
+  {
+    "UserName":"Жапарова Алия Макамиевна",
+    "createdBy":"45087",
+    "count":"32",
+    "active":"0",
+    "completed":"28",
+    "paused":"0",
+    "removed":"4"
+  },
+  {
+    "UserName":"Корфельдисова Гулнар Ережеповна",
+    "createdBy":"45088",
+    "count":"18",
+    "active":"0",
+    "completed":"16",
+    "paused":"0",
+    "removed":"2"
+  },
+  {
+    "UserName": "Нурдаулетов Еркин Амангельдиевич",
+    "createdBy": "47120",
+    "count": "1",
+    "active": "0",
+    "completed": "0",
+    "paused": "0",
+    "removed": "1"},
+  {
+    "UserName": "Черных Оксана Леонидовна",
+    "createdBy": "47314",
+    "count": "7",
+    "active": "0",
+    "completed": "7",
+    "paused": "0",
+    "removed": "0"
+  },
+  {
+    "UserName": "ЮРЬЕВА ОЛЬГА ВИКТОРОВНА",
+    "createdBy": "47703",
+    "count": "2",
+    "active": "0",
+    "completed": "0",
+    "paused": "0",
+    "removed": "2"
+  },
+  {
+    "UserName": "АРЗЫКУЛОВА АНАР ЖЕТЕСОВНА",
+    "createdBy": "47704",
+    "count": "37",
+    "active": "0",
+    "completed": "26",
+    "paused": "9",
+    "removed": "2"
+  },
+  {
+    "UserName": "МУКУРШИНА БИБИГУЛЬ ТАСБОЛАТОВНА",
+    "createdBy": "49182",
+    "count": "2",
+    "active": "0",
+    "completed": "2",
+    "paused": "0",
+    "removed": "0"
+  },
+  {
+    "UserName": "УСЕНБАЕВА МАЙГУЛЬ БЕКБУЛАТОВНА",
+    "createdBy": "49185",
+    "count": "115",
+    "active": "0",
+    "completed": "97",
+    "paused": "4",
+    "removed": "14"
+  },
+  {
+    "UserName": "КУРМАНБАЕВА МАНШУК КУАНДЫКОВНА",
+    "createdBy": "50103",
+    "count": "18",
+    "active": "0",
+    "completed": "0",
+    "paused": "0",
+    "removed": "18"
+  },
+  {
+    "UserName": "КЕНЕСОВА АКТОТЫ КАБДЕНОВНА",
+    "createdBy": "50104",
+    "count": "48",
+    "active": "0",
+    "completed": "42",
+    "paused": "6",
+    "removed": "0"
+  },
+  {
+    "UserName": "Сейтбаева Асель Жантасовна",
+    "createdBy": "51883",
+    "count": "34",
+    "active": "0",
+    "completed": "7",
+    "paused": "4",
+    "removed": "23"
+  },
+  {
+    "UserName": "Жусупова Кулаш Умиртаевна",
+    "createdBy": "51884",
+    "count": "15",
+    "active": "0",
+    "completed": "4",
+    "paused": "0",
+    "removed": "11"
+  },
+  {
+    "UserName": "Айдымбаева Рауза Шакиржановна",
+    "createdBy": "51885",
+    "count": "78",
+    "active": "0",
+    "completed": "7",
+    "paused": "0",
+    "removed": "52"
+  },
+  {
+    "UserName": "Баймукашева Толкин Сериковна",
+    "createdBy": "52805",
+    "count": "14",
+    "active": "0",
+    "completed": "14",
+    "paused": "0",
+    "removed": "0"
+  },
+  {
+    "UserName": "Мамбетова Назкен Амангелдиевна",
+    "createdBy": "52806",
+    "count": "142",
+    "active": "0",
+    "completed": "88",
+    "paused": "4",
+    "removed": "50"
+  },
+  {
+    "UserName": "ТОКСЕИТОВА ГУЛЬМИРА МАРАТОВНА",
+    "createdBy": "54876",
+    "count": "203",
+    "active": "0",
+    "completed": "124",
+    "paused": "4",
+    "removed": "75"
+  },
+  {
+    "UserName": "СЕЙДАЛИЕВА ГУЛЬМИРА МАДИБЕКОВНА",
+    "createdBy": "55733",
+    "count": "5",
+    "active": "0",
+    "completed": "0",
+    "paused": "1",
+    "removed": "4"
+  },
+  {
+    "UserName": "МАМЫРОВА ГУЛЬЖАХАН СЕЙДАХМЕТОВНА",
+    "createdBy": "55734",
+    "count": "4",
+    "active": "0",
+    "completed": "0",
+    "paused": "0",
+    "removed": "4"
+  },
+  {
+    "UserName": "КОТЕЛЬНИКОВА ИРИНА МИТРОФАНОВНА",
+    "createdBy": "56739",
+    "count": "8",
+    "active": "0",
+    "completed": "3",
+    "paused": "5",
+    "removed": "0"
+  },
+  {
+    "UserName": "ГУБАШЕВА УЛБОЛСЫН ЕРНАЗАРОВНА",
+    "createdBy": "56740",
+    "count": "11",
+    "active": "0",
+    "completed": "4",
+    "paused": "4",
+    "removed": "3"
+  },
+  {
+    "UserName": "Кельбатырова Рауан Абжановна",
+    "createdBy": "56803",
+    "count": "27",
+    "active": "0",
+    "completed": "26",
+    "paused": "0",
+    "removed": "1"
+  },
+  {
+    "UserName": "БУЖЕЕВА КЕНЖЕСУЛУ КАСЫМОВНА",
+    "createdBy": "58059",
+    "count": "6",
+    "active": "0",
+    "completed": "2",
+    "paused": "2",
+    "removed": "2"
+  },
+  {
+    "UserName": "АХМЕТОВА УМЫТ АНАТОЛЬЕВНА",
+    "createdBy": "58812",
+    "count": "64",
+    "active": "0",
+    "completed": "43",
+    "paused": "11",
+    "removed": "10"
+  },
+  {
+    "UserName": "Исакова Анна Александровна",
+    "createdBy": "60173",
+    "count": "7",
+    "active": "0",
+    "completed": "6",
+    "paused": "1",
+    "removed": "0"
+  },
+  {
+    "UserName": "Шарипжанова Самия Бакитовна",
+    "createdBy": "60174",
+    "count": "60",
+    "active": "0",
+    "completed": "26",
+    "paused": "4",
+    "removed": "30"
+  },
+  {
+    "UserName": "Шарапединов Бейбыт Кабдулович",
+    "createdBy": "60177",
+    "count": "25",
+    "active": "0",
+    "completed": "17",
+    "paused": "0",
+    "removed": "5"
+  },
+  {
+    "UserName": "КЕНЖЕЕВА ЛЯЗЗАТ ЖАНБЫРБАЙКЫЗЫ",
+    "createdBy": "60936",
+    "count": "14",
+    "active": "0",
+    "completed": "2",
+    "paused": "2",
+    "removed": "10"
+  },
+  {
+    "UserName": "ЗАУРБЕКОВА БИБИПАТИМА САБЫРОВНА",
+    "createdBy": "61996",
+    "count": "1",
+    "active": "0",
+    "completed": "1",
+    "paused": "0",
+    "removed": "0"
+  },
+  {
+    "UserName": "Линник Наталья Владимировна",
+    "createdBy": "61997",
+    "count": "3",
+    "active": "0",
+    "completed": "0",
+    "paused": "0",
+    "removed": "3"
+  },
+  {
+    "UserName": "Хамзина Зауре Какибаевна",
+    "createdBy": "62198",
+    "count": "5",
+    "active": "0",
+    "completed": "2",
+    "paused": "1",
+    "removed": "2"
+  },
+  {
+    "UserName": "Нуратаев Дархан Сейпылмаликович",
+    "createdBy": "62949",
+    "count": "5",
+    "active": "0",
+    "completed": "0",
+    "paused": "0",
+    "removed": "5"
+  },
+  {
+    "UserName": "Хамидуллина Дарья Александровна",
+    "createdBy": "62957",
+    "count": "91",
+    "active": "0",
+    "completed": "26",
+    "paused": "0",
+    "removed": "65"
+  },
+  {
+    "UserName": "Азимова Жазира Орынбасаровна",
+    "createdBy": "63341",
+    "count": "1",
+    "active": "0",
+    "completed": "0",
+    "paused": "0",
+    "removed": "1"
+  },
+  {
+    "UserName": "Укшебаева Жибек Габиткызы",
+    "createdBy": "66513",
+    "count": "5",
+    "active": "0",
+    "completed": "3",
+    "paused": "0",
+    "removed": "2"
+  },
+  {
+    "UserName": "Наурзбаева Лейла Тукеновна",
+    "createdBy": "66514",
+    "count": "53",
+    "active": "0",
+    "completed": "43",
+    "paused": "0",
+    "removed": "10"
+  },
+  {
+    "UserName": "Михайлова Юлия Анатольевна",
+    "createdBy": "66518",
+    "count": "6",
+    "active": "0",
+    "completed": "4",
+    "paused": "0",
+    "removed": "2"
+  },
+  {
+    "UserName": "МЫРЗАХМЕТОВА БАКТЫГУЛЬ АБИКЕНОВНА",
+    "createdBy": "66560",
+    "count": "32",
+    "active": "0",
+    "completed": "30",
+    "paused": "0",
+    "removed": "2"
+  },
+  {
+    "UserName": "БЕСБАЕВА РАУШАН ЕЛЕМЕСОВНА",
+    "createdBy": "66561",
+    "count": "231",
+    "active": "0",
+    "completed": "222",
+    "paused": "0",
+    "removed": "9"
+  },
+  {
+    "UserName": "Раимбекова Гульнара Бейсеналиевна",
+    "createdBy": "66562",
+    "count": "4",
+    "active": "0",
+    "completed": "1",
+    "paused": "0",
+    "removed": "3"
+  },
+  {
+    "UserName": "Балмагамбетова Галия Калибековна",
+    "createdBy": "68735",
+    "count": "335",
+    "active": "0",
+    "completed": "220",
+    "paused": "17",
+    "removed": "98"
+  },
+  {
+    "UserName": "Нагимаева Шуга Мажитовна",
+    "createdBy": "68736",
+    "count": "1",
+    "active": "0",
+    "completed": "1",
+    "paused": "0",
+    "removed": "0"
+  },
+  {
+    "UserName": "Анкапова Эльвира Кадыровна",
+    "createdBy": "68737",
+    "count": "8",
+    "active": "0",
+    "completed": "3",
+    "paused": "0",
+    "removed": "5"
+  },
+  {
+    "UserName": "ДОСЫМОВА АЙГУЛ НУРХАНОВНА",
+    "createdBy": "70595",
+    "count": "8",
+    "active": "0",
+    "completed": "0",
+    "paused": "0",
+    "removed": "8"
+  },
+  {
+    "UserName": "Ибраева Жанна Сериковна",
+    "createdBy": "71657",
+    "count": "90",
+    "active": "0",
+    "completed": "16",
+    "paused": "4",
+    "removed": "70"
+  },
+  {
+    "UserName": "Крылова Оксана Олеговна",
+    "createdBy": "71890",
+    "count": "3",
+    "active": "0",
+    "completed": "3",
+    "paused": "0",
+    "removed": "0"
+  },
+  {
+    "UserName": "Баянова Жаркын",
+    "createdBy": "72620",
+    "count": "47",
+    "active": "0",
+    "completed": "38",
+    "paused": "0",
+    "removed": "9"
+  },
+  {
+    "UserName": "Серикова Айгерим Сериковна",
+    "createdBy": "73025",
+    "count": "48",
+    "active": "0",
+    "completed": "37",
+    "paused": "8",
+    "removed": "3"
+  },
+  {
+    "UserName": "Айтахунова Мадина Сериковна",
+    "createdBy": "74172",
+    "count": "2",
+    "active": "0",
+    "completed": "2",
+    "paused": "0",
+    "removed": "0"
+  }
+]

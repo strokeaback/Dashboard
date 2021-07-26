@@ -1,0 +1,523 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>something</title>
+    <style>
+        th, td, p, input {
+            font:14px Verdana;
+        }
+        table, th, td
+        {
+            border: solid 1px #DDD;
+            border-collapse: collapse;
+            padding: 2px 3px;
+            text-align: center;
+        }
+        th {
+            font-weight:bold;
+        }
+    </style>
+    <script src="js/demo/datatables-demo.js"></script>
+</head>
+<body>
+<!--<table class="table table-bordered table-hover table-condensed">-->
+<!--    <thead><tr><th title="Field #1">UserName</th>-->
+<!--        <th title="Field #2">createdBy</th>-->
+<!--        <th title="Field #3">count</th>-->
+<!--        <th title="Field #4">active</th>-->
+<!--        <th title="Field #5">completed</th>-->
+<!--        <th title="Field #6">paused</th>-->
+<!--        <th title="Field #7">removed</th>-->
+<!--    </tr></thead>-->
+<!--    <tbody><tr>-->
+<!--        <td>Кисамеденова Лаура Акимгалиевна</td>-->
+<!--        <td align="right">242</td>-->
+<!--        <td align="right">44</td>-->
+<!--        <td>0</td>-->
+<!--        <td align="right">37</td>-->
+<!--        <td align="right">5</td>-->
+<!--        <td align="right">2</td>-->
+<!--    </tr>-->
+<!--    <tr>-->
+<!--        <td>Омбаева Маржан Токтасыновна</td>-->
+<!--        <td align="right">252</td>-->
+<!--        <td align="right">26</td>-->
+<!--        <td>0</td>-->
+<!--        <td align="right">16</td>-->
+<!--        <td align="right">8</td>-->
+<!--        <td align="right">2</td>-->
+<!--    </tr>-->
+<!--    <tr>-->
+<!--        <td>Битабаров Берик Абдимажитович</td>-->
+<!--        <td align="right">37841</td>-->
+<!--        <td align="right">3</td>-->
+<!--        <td>0</td>-->
+<!--        <td align="right">1</td>-->
+<!--        <td align="right">2</td>-->
+<!--        <td align="right">0</td>-->
+<!--    </tr>-->
+<!--    <tr>-->
+<!--        <td>Жумагулова Нагима Жумагуловна</td>-->
+<!--        <td align="right">44610</td>-->
+<!--        <td align="right">43</td>-->
+<!--        <td>0</td>-->
+<!--        <td align="right">23</td>-->
+<!--        <td align="right">15</td>-->
+<!--        <td align="right">5</td>-->
+<!--    </tr>-->
+<!--    <tr>-->
+<!--        <td>Кудайбергенова Сауле Ескендировна</td>-->
+<!--        <td align="right">45084</td>-->
+<!--        <td align="right">50</td>-->
+<!--        <td>0</td>-->
+<!--        <td align="right">42</td>-->
+<!--        <td align="right">0</td>-->
+<!--        <td align="right">8</td>-->
+<!--    </tr>-->
+<!--    <tr>-->
+<!--        <td>Зекенова Гульнар Кенесбаевна</td>-->
+<!--        <td align="right">45086</td>-->
+<!--        <td align="right">154</td>-->
+<!--        <td>0</td>-->
+<!--        <td align="right">131</td>-->
+<!--        <td align="right">5</td>-->
+<!--        <td align="right">18</td>-->
+<!--    </tr>-->
+<!--    <tr>-->
+<!--        <td>Жапарова Алия Макамиевна</td>-->
+<!--        <td align="right">45087</td>-->
+<!--        <td align="right">32</td>-->
+<!--        <td>0</td>-->
+<!--        <td align="right">28</td>-->
+<!--        <td align="right">0</td>-->
+<!--        <td align="right">4</td>-->
+<!--    </tr>-->
+<!--    <tr>-->
+<!--        <td>Корфельдисова Гулнар Ережеповна</td>-->
+<!--        <td align="right">45088</td>-->
+<!--        <td align="right">18</td>-->
+<!--        <td>0</td>-->
+<!--        <td align="right">16</td>-->
+<!--        <td align="right">0</td>-->
+<!--        <td align="right">2</td>-->
+<!--    </tr>-->
+<!--    <tr>-->
+<!--        <td>Нурдаулетов Еркин Амангельдиевич</td>-->
+<!--        <td align="right">47120</td>-->
+<!--        <td align="right">1</td>-->
+<!--        <td>0</td>-->
+<!--        <td align="right">0</td>-->
+<!--        <td align="right">0</td>-->
+<!--        <td align="right">1</td>-->
+<!--    </tr>-->
+<!--    <tr>-->
+<!--        <td>Черных Оксана Леонидовна</td>-->
+<!--        <td align="right">47314</td>-->
+<!--        <td align="right">7</td>-->
+<!--        <td>0</td>-->
+<!--        <td align="right">7</td>-->
+<!--        <td align="right">0</td>-->
+<!--        <td align="right">0</td>-->
+<!--    </tr>-->
+<!--    <tr>-->
+<!--        <td>ЮРЬЕВА ОЛЬГА ВИКТОРОВНА</td>-->
+<!--        <td align="right">47703</td>-->
+<!--        <td align="right">2</td>-->
+<!--        <td>0</td>-->
+<!--        <td align="right">0</td>-->
+<!--        <td align="right">0</td>-->
+<!--        <td align="right">2</td>-->
+<!--    </tr>-->
+<!--    <tr>-->
+<!--        <td>АРЗЫКУЛОВА АНАР ЖЕТЕСОВНА</td>-->
+<!--        <td align="right">47704</td>-->
+<!--        <td align="right">37</td>-->
+<!--        <td>0</td>-->
+<!--        <td align="right">26</td>-->
+<!--        <td align="right">9</td>-->
+<!--        <td align="right">2</td>-->
+<!--    </tr>-->
+<!--    <tr>-->
+<!--        <td>МУКУРШИНА БИБИГУЛЬ ТАСБОЛАТОВНА</td>-->
+<!--        <td align="right">49182</td>-->
+<!--        <td align="right">2</td>-->
+<!--        <td>0</td>-->
+<!--        <td align="right">2</td>-->
+<!--        <td align="right">0</td>-->
+<!--        <td align="right">0</td>-->
+<!--    </tr>-->
+<!--    <tr>-->
+<!--        <td>УСЕНБАЕВА МАЙГУЛЬ БЕКБУЛАТОВНА</td>-->
+<!--        <td align="right">49185</td>-->
+<!--        <td align="right">115</td>-->
+<!--        <td>0</td>-->
+<!--        <td align="right">97</td>-->
+<!--        <td align="right">4</td>-->
+<!--        <td align="right">14</td>-->
+<!--    </tr>-->
+<!--    <tr>-->
+<!--        <td>КУРМАНБАЕВА МАНШУК КУАНДЫКОВНА</td>-->
+<!--        <td align="right">50103</td>-->
+<!--        <td align="right">18</td>-->
+<!--        <td>0</td>-->
+<!--        <td align="right">0</td>-->
+<!--        <td align="right">0</td>-->
+<!--        <td align="right">18</td>-->
+<!--    </tr>-->
+<!--    <tr>-->
+<!--        <td>КЕНЕСОВА АКТОТЫ КАБДЕНОВНА</td>-->
+<!--        <td align="right">50104</td>-->
+<!--        <td align="right">48</td>-->
+<!--        <td>0</td>-->
+<!--        <td align="right">42</td>-->
+<!--        <td align="right">6</td>-->
+<!--        <td align="right">0</td>-->
+<!--    </tr>-->
+<!--    <tr>-->
+<!--        <td>Сейтбаева Асель Жантасовна</td>-->
+<!--        <td align="right">51883</td>-->
+<!--        <td align="right">34</td>-->
+<!--        <td>0</td>-->
+<!--        <td align="right">7</td>-->
+<!--        <td align="right">4</td>-->
+<!--        <td align="right">23</td>-->
+<!--    </tr>-->
+<!--    <tr>-->
+<!--        <td>Жусупова Кулаш Умиртаевна</td>-->
+<!--        <td align="right">51884</td>-->
+<!--        <td align="right">15</td>-->
+<!--        <td>0</td>-->
+<!--        <td align="right">4</td>-->
+<!--        <td align="right">0</td>-->
+<!--        <td align="right">11</td>-->
+<!--    </tr>-->
+<!--    <tr>-->
+<!--        <td>Айдымбаева Рауза Шакиржановна</td>-->
+<!--        <td align="right">51885</td>-->
+<!--        <td align="right">78</td>-->
+<!--        <td>0</td>-->
+<!--        <td align="right">7</td>-->
+<!--        <td align="right">0</td>-->
+<!--        <td align="right">52</td>-->
+<!--    </tr>-->
+<!--    <tr>-->
+<!--        <td>Баймукашева Толкин Сериковна</td>-->
+<!--        <td align="right">52805</td>-->
+<!--        <td align="right">14</td>-->
+<!--        <td>0</td>-->
+<!--        <td align="right">14</td>-->
+<!--        <td align="right">0</td>-->
+<!--        <td align="right">0</td>-->
+<!--    </tr>-->
+<!--    <tr>-->
+<!--        <td>Мамбетова Назкен Амангелдиевна</td>-->
+<!--        <td align="right">52806</td>-->
+<!--        <td align="right">142</td>-->
+<!--        <td>0</td>-->
+<!--        <td align="right">88</td>-->
+<!--        <td align="right">4</td>-->
+<!--        <td align="right">50</td>-->
+<!--    </tr>-->
+<!--    <tr>-->
+<!--        <td>ТОКСЕИТОВА ГУЛЬМИРА МАРАТОВНА</td>-->
+<!--        <td align="right">54876</td>-->
+<!--        <td align="right">203</td>-->
+<!--        <td>0</td>-->
+<!--        <td align="right">124</td>-->
+<!--        <td align="right">4</td>-->
+<!--        <td align="right">75</td>-->
+<!--    </tr>-->
+<!--    <tr>-->
+<!--        <td>СЕЙДАЛИЕВА ГУЛЬМИРА МАДИБЕКОВНА</td>-->
+<!--        <td align="right">55733</td>-->
+<!--        <td align="right">5</td>-->
+<!--        <td>0</td>-->
+<!--        <td align="right">0</td>-->
+<!--        <td align="right">1</td>-->
+<!--        <td align="right">4</td>-->
+<!--    </tr>-->
+<!--    <tr>-->
+<!--        <td>МАМЫРОВА ГУЛЬЖАХАН СЕЙДАХМЕТОВНА</td>-->
+<!--        <td align="right">55734</td>-->
+<!--        <td align="right">4</td>-->
+<!--        <td>0</td>-->
+<!--        <td align="right">0</td>-->
+<!--        <td align="right">0</td>-->
+<!--        <td align="right">4</td>-->
+<!--    </tr>-->
+<!--    <tr>-->
+<!--        <td>КОТЕЛЬНИКОВА ИРИНА МИТРОФАНОВНА</td>-->
+<!--        <td align="right">56739</td>-->
+<!--        <td align="right">8</td>-->
+<!--        <td>0</td>-->
+<!--        <td align="right">3</td>-->
+<!--        <td align="right">5</td>-->
+<!--        <td align="right">0</td>-->
+<!--    </tr>-->
+<!--    <tr>-->
+<!--        <td>ГУБАШЕВА УЛБОЛСЫН ЕРНАЗАРОВНА</td>-->
+<!--        <td align="right">56740</td>-->
+<!--        <td align="right">11</td>-->
+<!--        <td>0</td>-->
+<!--        <td align="right">4</td>-->
+<!--        <td align="right">4</td>-->
+<!--        <td align="right">3</td>-->
+<!--    </tr>-->
+<!--    <tr>-->
+<!--        <td>Кельбатырова Рауан Абжановна</td>-->
+<!--        <td align="right">56803</td>-->
+<!--        <td align="right">27</td>-->
+<!--        <td>0</td>-->
+<!--        <td align="right">26</td>-->
+<!--        <td align="right">0</td>-->
+<!--        <td align="right">1</td>-->
+<!--    </tr>-->
+<!--    <tr>-->
+<!--        <td>БУЖЕЕВА КЕНЖЕСУЛУ КАСЫМОВНА</td>-->
+<!--        <td align="right">58059</td>-->
+<!--        <td align="right">6</td>-->
+<!--        <td>0</td>-->
+<!--        <td align="right">2</td>-->
+<!--        <td align="right">2</td>-->
+<!--        <td align="right">2</td>-->
+<!--    </tr>-->
+<!--    <tr>-->
+<!--        <td>АХМЕТОВА УМЫТ АНАТОЛЬЕВНА</td>-->
+<!--        <td align="right">58812</td>-->
+<!--        <td align="right">64</td>-->
+<!--        <td>0</td>-->
+<!--        <td align="right">43</td>-->
+<!--        <td align="right">11</td>-->
+<!--        <td align="right">10</td>-->
+<!--    </tr>-->
+<!--    <tr>-->
+<!--        <td>Исакова Анна Александровна</td>-->
+<!--        <td align="right">60173</td>-->
+<!--        <td align="right">7</td>-->
+<!--        <td>0</td>-->
+<!--        <td align="right">6</td>-->
+<!--        <td align="right">1</td>-->
+<!--        <td align="right">0</td>-->
+<!--    </tr>-->
+<!--    <tr>-->
+<!--        <td>Шарипжанова Самия Бакитовна</td>-->
+<!--        <td align="right">60174</td>-->
+<!--        <td align="right">60</td>-->
+<!--        <td>0</td>-->
+<!--        <td align="right">26</td>-->
+<!--        <td align="right">4</td>-->
+<!--        <td align="right">30</td>-->
+<!--    </tr>-->
+<!--    <tr>-->
+<!--        <td>Шарапединов Бейбыт Кабдулович</td>-->
+<!--        <td align="right">60177</td>-->
+<!--        <td align="right">25</td>-->
+<!--        <td>0</td>-->
+<!--        <td align="right">17</td>-->
+<!--        <td align="right">0</td>-->
+<!--        <td align="right">5</td>-->
+<!--    </tr>-->
+<!--    <tr>-->
+<!--        <td>КЕНЖЕЕВА ЛЯЗЗАТ ЖАНБЫРБАЙКЫЗЫ</td>-->
+<!--        <td align="right">60936</td>-->
+<!--        <td align="right">14</td>-->
+<!--        <td>0</td>-->
+<!--        <td align="right">2</td>-->
+<!--        <td align="right">2</td>-->
+<!--        <td align="right">10</td>-->
+<!--    </tr>-->
+<!--    <tr>-->
+<!--        <td>ЗАУРБЕКОВА БИБИПАТИМА САБЫРОВНА</td>-->
+<!--        <td align="right">61996</td>-->
+<!--        <td align="right">1</td>-->
+<!--        <td>0</td>-->
+<!--        <td align="right">1</td>-->
+<!--        <td align="right">0</td>-->
+<!--        <td align="right">0</td>-->
+<!--    </tr>-->
+<!--    <tr>-->
+<!--        <td>Линник Наталья Владимировна</td>-->
+<!--        <td align="right">61997</td>-->
+<!--        <td align="right">3</td>-->
+<!--        <td>0</td>-->
+<!--        <td align="right">0</td>-->
+<!--        <td align="right">0</td>-->
+<!--        <td align="right">3</td>-->
+<!--    </tr>-->
+<!--    <tr>-->
+<!--        <td>Хамзина Зауре Какибаевна</td>-->
+<!--        <td align="right">62198</td>-->
+<!--        <td align="right">5</td>-->
+<!--        <td>0</td>-->
+<!--        <td align="right">2</td>-->
+<!--        <td align="right">1</td>-->
+<!--        <td align="right">2</td>-->
+<!--    </tr>-->
+<!--    <tr>-->
+<!--        <td>Нуратаев Дархан Сейпылмаликович</td>-->
+<!--        <td align="right">62949</td>-->
+<!--        <td align="right">5</td>-->
+<!--        <td>0</td>-->
+<!--        <td align="right">0</td>-->
+<!--        <td align="right">0</td>-->
+<!--        <td align="right">5</td>-->
+<!--    </tr>-->
+<!--    <tr>-->
+<!--        <td>Хамидуллина Дарья Александровна</td>-->
+<!--        <td align="right">62957</td>-->
+<!--        <td align="right">91</td>-->
+<!--        <td>0</td>-->
+<!--        <td align="right">26</td>-->
+<!--        <td align="right">0</td>-->
+<!--        <td align="right">65</td>-->
+<!--    </tr>-->
+<!--    <tr>-->
+<!--        <td>Азимова Жазира Орынбасаровна</td>-->
+<!--        <td align="right">63341</td>-->
+<!--        <td align="right">1</td>-->
+<!--        <td>0</td>-->
+<!--        <td align="right">0</td>-->
+<!--        <td align="right">0</td>-->
+<!--        <td align="right">1</td>-->
+<!--    </tr>-->
+<!--    <tr>-->
+<!--        <td>Укшебаева Жибек Габиткызы</td>-->
+<!--        <td align="right">66513</td>-->
+<!--        <td align="right">5</td>-->
+<!--        <td>0</td>-->
+<!--        <td align="right">3</td>-->
+<!--        <td align="right">0</td>-->
+<!--        <td align="right">2</td>-->
+<!--    </tr>-->
+<!--    <tr>-->
+<!--        <td>Наурзбаева Лейла Тукеновна</td>-->
+<!--        <td align="right">66514</td>-->
+<!--        <td align="right">53</td>-->
+<!--        <td>0</td>-->
+<!--        <td align="right">43</td>-->
+<!--        <td align="right">0</td>-->
+<!--        <td align="right">10</td>-->
+<!--    </tr>-->
+<!--    <tr>-->
+<!--        <td>Михайлова Юлия Анатольевна</td>-->
+<!--        <td align="right">66518</td>-->
+<!--        <td align="right">6</td>-->
+<!--        <td>0</td>-->
+<!--        <td align="right">4</td>-->
+<!--        <td align="right">0</td>-->
+<!--        <td align="right">2</td>-->
+<!--    </tr>-->
+<!--    <tr>-->
+<!--        <td>МЫРЗАХМЕТОВА БАКТЫГУЛЬ АБИКЕНОВНА</td>-->
+<!--        <td align="right">66560</td>-->
+<!--        <td align="right">32</td>-->
+<!--        <td>0</td>-->
+<!--        <td align="right">30</td>-->
+<!--        <td align="right">0</td>-->
+<!--        <td align="right">2</td>-->
+<!--    </tr>-->
+<!--    <tr>-->
+<!--        <td>БЕСБАЕВА РАУШАН ЕЛЕМЕСОВНА</td>-->
+<!--        <td align="right">66561</td>-->
+<!--        <td align="right">231</td>-->
+<!--        <td>0</td>-->
+<!--        <td align="right">222</td>-->
+<!--        <td align="right">0</td>-->
+<!--        <td align="right">9</td>-->
+<!--    </tr>-->
+<!--    <tr>-->
+<!--        <td>Раимбекова Гульнара Бейсеналиевна</td>-->
+<!--        <td align="right">66562</td>-->
+<!--        <td align="right">4</td>-->
+<!--        <td>0</td>-->
+<!--        <td align="right">1</td>-->
+<!--        <td align="right">0</td>-->
+<!--        <td align="right">3</td>-->
+<!--    </tr>-->
+<!--    <tr>-->
+<!--        <td>Балмагамбетова Галия Калибековна</td>-->
+<!--        <td align="right">68735</td>-->
+<!--        <td align="right">335</td>-->
+<!--        <td>0</td>-->
+<!--        <td align="right">220</td>-->
+<!--        <td align="right">17</td>-->
+<!--        <td align="right">98</td>-->
+<!--    </tr>-->
+<!--    <tr>-->
+<!--        <td>Нагимаева Шуга Мажитовна</td>-->
+<!--        <td align="right">68736</td>-->
+<!--        <td align="right">1</td>-->
+<!--        <td>0</td>-->
+<!--        <td align="right">1</td>-->
+<!--        <td align="right">0</td>-->
+<!--        <td align="right">0</td>-->
+<!--    </tr>-->
+<!--    <tr>-->
+<!--        <td>Анкапова Эльвира Кадыровна</td>-->
+<!--        <td align="right">68737</td>-->
+<!--        <td align="right">8</td>-->
+<!--        <td>0</td>-->
+<!--        <td align="right">3</td>-->
+<!--        <td align="right">0</td>-->
+<!--        <td align="right">5</td>-->
+<!--    </tr>-->
+<!--    <tr>-->
+<!--        <td>ДОСЫМОВА АЙГУЛ НУРХАНОВНА</td>-->
+<!--        <td align="right">70595</td>-->
+<!--        <td align="right">8</td>-->
+<!--        <td>0</td>-->
+<!--        <td align="right">0</td>-->
+<!--        <td align="right">0</td>-->
+<!--        <td align="right">8</td>-->
+<!--    </tr>-->
+<!--    <tr>-->
+<!--        <td>Ибраева Жанна Сериковна</td>-->
+<!--        <td align="right">71657</td>-->
+<!--        <td align="right">90</td>-->
+<!--        <td>0</td>-->
+<!--        <td align="right">16</td>-->
+<!--        <td align="right">4</td>-->
+<!--        <td align="right">70</td>-->
+<!--    </tr>-->
+<!--    <tr>-->
+<!--        <td>Крылова Оксана Олеговна</td>-->
+<!--        <td align="right">71890</td>-->
+<!--        <td align="right">3</td>-->
+<!--        <td>0</td>-->
+<!--        <td align="right">3</td>-->
+<!--        <td align="right">0</td>-->
+<!--        <td align="right">0</td>-->
+<!--    </tr>-->
+<!--    <tr>-->
+<!--        <td>Баянова Жар?ын</td>-->
+<!--        <td align="right">72620</td>-->
+<!--        <td align="right">47</td>-->
+<!--        <td>0</td>-->
+<!--        <td align="right">38</td>-->
+<!--        <td align="right">0</td>-->
+<!--        <td align="right">9</td>-->
+<!--    </tr>-->
+<!--    <tr>-->
+<!--        <td>Серикова Айгерим Сериковна</td>-->
+<!--        <td align="right">73025</td>-->
+<!--        <td align="right">48</td>-->
+<!--        <td>0</td>-->
+<!--        <td align="right">37</td>-->
+<!--        <td align="right">8</td>-->
+<!--        <td align="right">3</td>-->
+<!--    </tr>-->
+<!--    <tr>-->
+<!--        <td>Айтахунова Мадина Сериковна</td>-->
+<!--        <td align="right">74172</td>-->
+<!--        <td align="right">2</td>-->
+<!--        <td>0</td>-->
+<!--        <td align="right">2</td>-->
+<!--        <td align="right">0</td>-->
+<!--        <td align="right">0</td>-->
+<!--    </tr>-->
+<!--    </tbody></table>-->
+<input type="button" onclick="CreateTableFromJSON()" value="Create Table From JSON" />
+<p id="showData"></p>
+</body>
+</html>
