@@ -3,134 +3,78 @@ Chart.defaults.global.defaultFontFamily = 'Nunito', '-apple-system,system-ui,Bli
 Chart.defaults.global.defaultFontColor = '#858796';
 
 // Pie Chart Example
-var myBooks3 = [
+var myBooks2 = [
   {
-    "Name": "Блок прочих функций",
-    "Count": "302"
+    "Labels": "АРДТ",
+    "close": 526
   },
   {
-    "Name": "Восточная РДТ",
-    "Count": "662"
+    "Labels": "ВРДТ",
+    "close": 391
   },
   {
-    "Name": "Главный центр управления сетями телекомм",
-    "Count": "530"
+    "Labels": "ЗРДТ",
+    "close": 298
   },
   {
-    "Name": "Головная структурная единица",
-    "Count": "66"
+    "Labels": "СРДТ",
+    "close": 237
   },
   {
-    "Name": "Головное подразделение",
-    "Count": "2"
+    "Labels": "ЦРДТ",
+    "close": 471
   },
   {
-    "Name": "Головное предприятие ОДТ",
-    "Count": "59"
-  },
-  {
-    "Name": "Головной аппарат",
-    "Count": "45"
-  },
-  {
-    "Name": "Дивизион по корпоративному бизнесу",
-    "Count": "232"
-  },
-  {
-    "Name": "Дивизион по розничному бизнесу",
-    "Count": "170"
-  },
-  {
-    "Name": "Дирекция \"Академия инфоком. технологий\"",
-    "Count": "26"
-  },
-  {
-    "Name": "Дирекция информационных систем",
-    "Count": "86"
-  },
-  {
-    "Name": "Дирекция стр.телеком.инфрастр",
-    "Count": "23"
-  },
-  {
-    "Name": "Дирекция Телеком Комплект",
-    "Count": "77"
-  },
-  {
-    "Name": "Западная РДТ",
-    "Count": "594"
-  },
-  {
-    "Name": "РДТ Алматытелеком",
-    "Count": "935"
-  },
-  {
-    "Name": "РДТ Астанателеком",
-    "Count": "40"
-  },
-  {
-    "Name": "Северная РДТ",
-    "Count": "480"
-  },
-  {
-    "Name": "Северо-Казахстанская ОДТ",
-    "Count": "1"
-  },
-  {
-    "Name": "Сервисная Фабрика",
-    "Count": "417"
-  },
-  {
-    "Name": "Центральная РДТ",
-    "Count": "1181"
-  },
-  {
-    "Name": "Центральный аппарат",
-    "Count": "147"
-  },
-  {
-    "Name": "Южная РДТ",
-    "Count": "408"
+    "Labels": "ЮРДТ",
+    "close": 292
   }
 ]
 
-var labels = myBooks3.map(function (e) {
-  return e.Name
+var labels = myBooks2.map(function (e) {
+  return e.Labels
 })
 
-var data = myBooks3.map(function (e) {
-  return e.Count
+var data = myBooks2.map(function (e) {
+  return e.close
 })
 
 var ctx = document.getElementById("myPieChart");
-var myPieChart = new Chart(ctx, {
+var myChart = new Chart(ctx, {
   type: 'pie',
   data: {
+    // labels: ['Red', 'Blue', 'Yellow', 'Green', 'Purple', 'Orange'],
     labels: labels,
     datasets: [{
+      label: '# of Votes',
+      // data: [12, 19, 3, 5, 2, 3],
       data: data,
-      backgroundColor: ['#4e73df', '#1cc88a', '#36b9cc', '#e74a3b', '#1c606a', '#6f42c1', '#78261f', '#e9aa0b', '#484a54', '#484a54', '#484a54', '#0D1321', '#1D2D44', '#3E5C76', '#748CAB', '#F0EBD8', '#D6D2D2', '#F1E4F3', '#F4BBD3', '#F686BD', '#FE5D9F', '#423B0B'],
-      hoverBackgroundColor: ['#2e59d9', '#17a673', '#2c9faf'],
-      hoverBorderColor: "rgba(234, 236, 244, 1)",
-    }],
+      backgroundColor: [
+        'rgba(255, 99, 132, 1)',
+        'rgba(54, 162, 235, 1)',
+        'rgba(255, 206, 86, 1)',
+        'rgba(75, 192, 192, 1)',
+        'rgba(153, 102, 255, 1)',
+        'rgba(255, 159, 64, 1)'
+      ],
+      borderColor: [
+        'rgba(255, 99, 132, 1)',
+        'rgba(54, 162, 235, 1)',
+        'rgba(255, 206, 86, 1)',
+        'rgba(75, 192, 192, 1)',
+        'rgba(153, 102, 255, 1)',
+        'rgba(255, 159, 64, 1)'
+      ],
+      borderWidth: 1,
+      hoverOffset: 4
+    }]
   },
   options: {
-    maintainAspectRatio: false,
-    tooltips: {
-      backgroundColor: "rgb(255,255,255)",
-      bodyFontColor: "#858796",
-      borderColor: '#dddfeb',
-      borderWidth: 1,
-      xPadding: 15,
-      yPadding: 15,
-      displayColors: false,
-      caretPadding: 10,
-    },
-    legend: {
-      display: false
-    },
-    cutoutPercentage: 80,
-  },
+    scales: {
+      y: {
+        beginAtZero: true
+      }
+    }
+  }
 });
 
 var ctx2 = document.getElementById("myPieChart2");
