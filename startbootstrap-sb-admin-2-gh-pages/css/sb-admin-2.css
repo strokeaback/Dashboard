@@ -7844,7 +7844,7 @@ button.bg-dark:focus {
 }
 
 .Chart {
-  margin: 20px auto 20px auto;
+  margin: 0 auto 20px auto;
   padding: 5%;
   width: 465px;
   height: 465px;
