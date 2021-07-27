@@ -7851,6 +7851,10 @@ button.bg-dark:focus {
   background: white;
 }
 
+.chart-2 {
+  padding: 62px 0px;
+}
+
 .ml-4,
 .mx-4 {
   margin-left: 1.5rem !important;

@@ -141,11 +141,12 @@ var myBarChart2 = new Chart(ctx2, {
       label: 'Average',
       Color: "#4edf88",
       borderColor: "#2e59d9",
-      pointHoverRadius: 3,
+      // pointHoverRadius: 3,
       pointBackgroundColor: "#2e59d9",
       pointBorderColor: "#2e59d9",
       pointHitRadius: 10,
       pointBorderWidth: 2,
+      lineTension: 0,
       data: [15, 19, 17, 16],
       type: 'line',
       // this dataset is drawn on top
@@ -159,6 +160,7 @@ var myBarChart2 = new Chart(ctx2, {
       pointBorderColor: "#e74a3b",
       pointHitRadius: 10,
       pointBorderWidth: 2,
+      lineTension: 0,
       data: [8, 8, 7, 5],
       type: 'line',
       // this dataset is drawn on top
