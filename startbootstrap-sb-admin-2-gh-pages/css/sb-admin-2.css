@@ -7856,7 +7856,7 @@ button.bg-dark:focus {
 }
 
 .projects {
-  padding: 42px 20px;
+  padding: 41px 20px;
 }
 
 .ml-4,
@@ -10012,6 +10012,10 @@ a:focus {
   font-weight: bold;
 }
 
+/*.indicators__h4 {*/
+/*  */
+/*}*/
+
 @keyframes fadeIn {
   0% {
     opacity: 0;
@@ -10323,7 +10327,7 @@ a:focus {
 }
 
 .topbar .navbar-search {
-  width: 25rem;
+  /*width: 25rem;*/
 }
 
 .topbar .navbar-search input {
